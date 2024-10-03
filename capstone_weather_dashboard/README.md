@@ -26,11 +26,12 @@ A simple and responsive Weather App built using **React**, **Tailwind CSS**, and
 Before you can run the project, ensure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
-- [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) (for package management)
+- [NPM](https://www.npmjs.com/) (for package management)
 
 ### Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   https://github.com/wakgari-Elias/ALX_Capstone_Project.git
+
