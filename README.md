@@ -46,11 +46,14 @@ To run this project locally, follow these steps:
 
 ## Project Structure
 
+<<<<<<< HEAD
 src/ ├── assets/
 │ ├── clear.png # Icon for clear weather │ ├── cloud.png # Icon for cloudy weather │ ├── drizzle.png # Icon for drizzle weather │ ├── rain.png # Icon for rainy weather │ ├── snow.png # Icon for snowy weather ├── components/ │ ├── Weather.jsx # Main component for displaying weather information │ ├── SearchBar.jsx # Input component for searching by city │ ├── WeatherCard.jsx # Card component for displaying weather details │ ├── ErrorMessage.jsx # Component to display error messages ├── App.jsx # Main App component ├── index.css # Global styles using Tailwind CSS ├── main.jsx # Application entry point └── .env # Environment file storing the OpenWeatherMap API key
 
 
 
+=======
+>>>>>>> c843e2dbdb8cb5e8f0f1497bafd3ea337211d290
 ### Explanation:
 
 - **assets/**: Contains weather icons (clear, cloud, drizzle, rain, snow) that represent different weather conditions.
@@ -68,6 +71,10 @@ This project structure helps keep the codebase organized and maintainable, espec
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c843e2dbdb8cb5e8f0f1497bafd3ea337211d290
 ## Technologies Used
 
 - **React**: JavaScript library for building the user interface.
@@ -91,4 +98,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Elias Wakgari** - [GitHub](https://github.com/wakgari-Elias)
 
+<<<<<<< HEAD
  😊
+=======
+Feel free to raise issues or contribute to the project! 😊
+>>>>>>> c843e2dbdb8cb5e8f0f1497bafd3ea337211d290
