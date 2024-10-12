@@ -87,4 +87,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Elias Wakgari** - [GitHub](https://github.com/wakgari-Elias)
 
-Feel free to raise issues or contribute to the project! 😊
+
