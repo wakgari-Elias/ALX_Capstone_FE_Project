@@ -101,5 +101,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 <<<<<<< HEAD
  😊
 =======
-Feel free to raise issues or contribute to the project! 😊
 >>>>>>> c843e2dbdb8cb5e8f0f1497bafd3ea337211d290

@@ -1,6 +1,5 @@
-// src/components/Weather.jsx
-
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types'; 
 import SearchBar from './SearchBar';
 import WeatherCard from './WeatherCard';
 import ErrorMessage from './ErrorMessage';
@@ -10,12 +9,10 @@ import drizzle_icon from '../assets/drizzle.png';
 import rain_icon from '../assets/rain.png';
 import snow_icon from '../assets/snow.png';
 
-const Weather = () => {
+const Weather = ({ darkMode }) => {
     const [weatherData, setWeatherData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-
-
 
     const allIcons = {
         '01d': clear_icon,
@@ -36,8 +33,6 @@ const Weather = () => {
         '13n': snow_icon,
     };
 
-
-
     const search = async (cityOrCoords) => {
         setLoading(true);
         setError(null);
@@ -51,11 +46,8 @@ const Weather = () => {
                 return;
             }
 
-
             url = `https://api.openweathermap.org/data/2.5/weather?q=${cityOrCoords}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
-        }
-         else 
-         {
+        } else {
             const { lat, lon } = cityOrCoords;
             url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
         }
@@ -112,14 +104,19 @@ const Weather = () => {
     }, []);
 
     return (
-        <div className='flex flex-col items-center p-8 bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500
- rounded-lg shadow-lg transition-transform transform hover:scale-105 max-w-lg mx-auto mt-16'>
+        <div className={`flex flex-col items-center p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 max-w-lg mx-auto mt-16 
+        ${darkMode ? 'bg-gray-800 text-white' : 'bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500 text-black'}`}>
             <SearchBar onSearch={search} loading={loading} />
             {loading && <p className='text-gray-50 text-lg'>Loading...</p>}
             {error && <ErrorMessage message={error} />}
             {weatherData && <WeatherCard weatherData={weatherData} />}
         </div>
     );
+};
+
+// Add prop validation using PropTypes
+Weather.propTypes = {
+    darkMode: PropTypes.bool.isRequired,  // darkMode must be a boolean and required
 };
 
 export default Weather;

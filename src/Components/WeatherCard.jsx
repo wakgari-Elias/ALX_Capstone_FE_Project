@@ -12,7 +12,7 @@ const WeatherCard = ({ weatherData }) => {
             </p>
 
             
-            <p className='text-white text-4xl drop-shadow-md dark:text-gray-200'>
+            <p className='text-4xl font-bold bg-gradient-to-r from-[#ECE9E6] to-[#FFFFFF] bg-clip-text text-transparent drop-shadow-md dark:text-gray-500'>
                 {weatherData.location}
             </p>
 

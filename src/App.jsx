@@ -10,9 +10,10 @@ const App = () => {
     };
 
     return (
-        <div className={`app ${darkMode ? 'bg-gray-900' : 'bg-white'} transition duration-300`}>
+        <div className="min-h-screen p-8">
             <DarkModeToggle toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-            <Weather/>
+            {/* Pass darkMode state as prop to Weather */}
+            <Weather darkMode={darkMode} />
         </div>
     );
 };
